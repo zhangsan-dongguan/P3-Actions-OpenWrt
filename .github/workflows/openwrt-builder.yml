@@ -126,7 +126,7 @@ jobs:
       with:
           tag_name: ${{ steps.tag.outputs.release_tag }}
           body_path: release.txt
-          files: ${{ env.FIRMWARE }}/*.bin
+          files: openwrt/bin/targets/*/*/*.bin
 
     - name: Generate release tag
       id: tag
