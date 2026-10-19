@@ -22,5 +22,5 @@
 # 在 feeds.conf.default 文件末尾直接追加你需要的第三方源
 echo 'src-git kenzo https://github.com/kenzok8/openwrt-packages' >>feeds.conf.default
 echo 'src-git small https://github.com/kenzok8/small' >>feeds.conf.default
-echo 'src-git passwall https://github.com/kenzok8/small/tree/master/luci-app-passwall' >>feeds.conf.default
-echo 'src-git passwall2 https://github.com/kenzok8/small/tree/master/luci-app-passwall2' >>feeds.conf.default
+#echo 'src-git passwall https://github.com/kenzok8/small/tree/master/luci-app-passwall' >>feeds.conf.default
+#echo 'src-git passwall2 https://github.com/kenzok8/small/tree/master/luci-app-passwall2' >>feeds.conf.default
