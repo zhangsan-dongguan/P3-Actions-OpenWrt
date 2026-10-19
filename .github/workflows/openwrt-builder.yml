@@ -118,12 +118,12 @@ jobs:
         echo "FIRMWARE=$PWD" >> $GITHUB_ENV
         echo "status=success" >> $GITHUB_OUTPUT
 
-     - name: Upload firmware to release
-       uses: softprops/action-gh-release@master
-       if: steps.tag.outputs.status == 'success' && !cancelled()
-       env:
+    - name: Upload firmware to release
+      uses: softprops/action-gh-release@master
+      if: steps.tag.outputs.status == 'success' && !cancelled()
+      env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
+      with:
           tag_name: ${{ steps.tag.outputs.release_tag }}
           body_path: release.txt
           files: |
